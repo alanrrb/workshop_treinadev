@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/workshop_treinadev
+    links:
+      - db
+    env_file: .env
+  db:
+    image: postgres
+    env_file: .env
+
