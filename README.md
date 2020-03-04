@@ -68,6 +68,8 @@ docker-compose run web bash
 Crie o projeto
 
 ```
+gem install rails
+
 rails new . -T --database=postgresql
 ```
 
